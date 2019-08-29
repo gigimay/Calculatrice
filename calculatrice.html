@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculatrice.css">
+  <title>Cualculatrice</title>
+</head>
+<body>
+  <div class="container" id="calc">
+    <div class="divDisplay">
+      <input type="text" readonly="readonly" name="calculResult" id="calculResult" onkeydown="detect_calcul('calc', 'event')">
+    </div>
+
+    <div class="mainDiv">
+      <div class="item_1">
+        <input type="button" value="CE" id="calculAnnul" onclick="f_calcul('calc', 'ce')">
+      </div>
+      <div class="item_2">
+        <input type="button" value="%" id="calculPourcent" onclick="f_calcul('calc', '%')">
+      </div>
+      <div class="item_3">
+        <input type="button" value="+" id="calculPlus" onclick="f_calcul('calc', '+')">
+      </div>
+      <div class="item_4">
+        <input type="button" value="*" id="calculMultiple" onclick="f_calcul('calc', '*')">
+      </div>
+      <div class="item_5">
+        <input type="button" value="/" id="calculDiviser" onclick="f_calcul('calc', '/')">
+      </div>
+      <div class="item_6">
+        <input type="button" value="-" id="calculMinus" onclick="f_calcul('calc', '-')">
+      </div>
+      <div class="item_7">
+        <input type="button" value="1" id="chiffre_1" onclick="f_calcul('calc', '1')">
+      </div>
+      <div class="item_8">
+        <input type="button" value="2" id="chiffre_2" onclick="f_calcul('calc', '2')">
+      </div>
+      <div class="item_9">
+        <input type="button" value="3" id="chiffre_3" onclick="f_calcul('calc', '3')">
+      </div>
+      <div class="item_10">
+        <input type="button" value="4" id="chiffre_4" onclick="f_calcul('calc', '4')">
+      </div>
+      <div class="item_11">
+        <input type="button" value="5" id="chiffre_5" onclick="f_calcul('calc', '5')">
+      </div>
+      <div class="item_12">
+        <input type="button" value="6" id="chiffre_6" onclick="f_calcul('calc', '6')">
+      </div>
+      <div class="item_13">
+        <input type="button" value="7" id="chiffre_7" onclick="f_calcul('calc', '7')">
+      </div>
+      <div class="item_14">
+        <input type="button" value="8" id="chiffre_8" onclick="f_calcul('calc', '8')">
+      </div>
+      <div class="item_15">
+        <input type="button" value="9" id="chiffre_9" onclick="f_calcul('calc', '9')">
+      </div>
+      <div class="item_16">
+        <input type="button" value="=" id="resultat" onclick="f_calcul('calc', '=')">
+      </div>
+      <div class="item_17">
+        <input type="button" value="0" id="chiffre_0" onclick="f_calcul('calc', '0')">
+      </div>
+      <div class="item_18">
+        <input type="button" value="->" id="enter" onclick="f_calcul('calc', '=')">
+      </div>
+    </div>
+  </div>
+
+<script type="text/javascript" src="calculatrice.js"></script>
+</body>
+</html>
